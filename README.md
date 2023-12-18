@@ -5,7 +5,8 @@ and the weight and intensity around that node is going to be normally distribute
 such cases, wait time and other metrics are optimized if the token was randomized in motion between servers rather than completeing the entire ring which leads to a notable 
 increase in wait time due to having to go an highly active section of the ring before first .
 
-#FactoredHighestResponeRatio
+# Factored Highest Response Ratio Scheduler
+
 
 The Response Ratio is W+S/S were W is weight time and S is burst Time, the Highest Response Ratio scheduler prioritizes tasks by response ratio, but what if a factor
 was introduced such that F*W+S/S where F is the factor. As F increases the significance of weight time increases slowly make it in essence a first come first serve system
